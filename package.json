@@ -1,0 +1,43 @@
+{
+  "name": "kata",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheppy/kata.git"
+  },
+  "author": "Chris Sheppard (http://www.chrissheppard.co.uk/)",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/sheppy/kata/issues"
+  },
+  "homepage": "https://github.com/sheppy/kata",
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.2.17",
+    "chai": "^2.3.0",
+    "gulp": "^3.8.11",
+    "gulp-eslint": "^0.12.0",
+    "gulp-filter": "^2.0.2",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-istanbul-enforcer": "^1.0.3",
+    "gulp-jscpd": "0.0.4",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jshint": "^1.10.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-mocha": "^2.0.1",
+    "gulp-plumber": "^1.0.0",
+    "isparta": "^3.0.3",
+    "jshint-stylish": "^1.0.2",
+    "lodash": "^3.8.0",
+    "proxyquire": "^1.4.0",
+    "require-dir": "^0.3.0",
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0"
+  }
+}
