@@ -15,12 +15,16 @@ module.exports = function (wallaby) {
                 pattern: "node_modules/babel/polyfill.js",
                 instrument: false
             },
+            {
+                pattern: "tests/_helpers/**/*.js",
+                instrument: false
+            },
             { pattern: "src/**/*.js", load: false},
-            { pattern: "tests/**/*.js", ignore: true }
+            { pattern: "tests/**/*.spec.js", ignore: true }
         ],
 
         tests: [
-            { pattern: "tests/**/*.js", load: true }
+            { pattern: "tests/**/*.spec.js", load: true }
         ],
 
         compilers: {
