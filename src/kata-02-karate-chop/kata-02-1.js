@@ -1,3 +1,5 @@
+"use strict";
+
 let chop = function (needle, haystack) {
     let half, result;
 

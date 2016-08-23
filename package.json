@@ -5,7 +5,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "mocha --check-leaks --recursive --require ./tests/_helpers/index.js tests"
   },
   "repository": {
     "type": "git",
@@ -19,25 +19,11 @@
   "homepage": "https://github.com/sheppy/kata",
   "dependencies": {},
   "devDependencies": {
-    "babel": "^5.2.17",
-    "chai": "^2.3.0",
-    "gulp": "^3.8.11",
-    "gulp-eslint": "^0.12.0",
-    "gulp-filter": "^2.0.2",
-    "gulp-istanbul": "^0.9.0",
-    "gulp-istanbul-enforcer": "^1.0.3",
-    "gulp-jscpd": "0.0.4",
-    "gulp-jscs": "^1.6.0",
-    "gulp-jshint": "^1.10.0",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-mocha": "^2.0.1",
-    "gulp-plumber": "^1.0.0",
-    "isparta": "^3.0.3",
-    "jshint-stylish": "^1.0.2",
-    "lodash": "^3.8.0",
-    "proxyquire": "^1.4.0",
-    "require-dir": "^0.3.0",
-    "sinon": "^1.14.1",
-    "sinon-chai": "^2.7.0"
+    "chai": "3.5.0",
+    "chai-as-promised": "5.3.0",
+    "mocha": "3.0.2",
+    "proxyquire": "1.7.10",
+    "sinon": "1.17.5",
+    "sinon-chai": "2.8.0"
   }
 }

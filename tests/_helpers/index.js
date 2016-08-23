@@ -1,12 +1,20 @@
-var chai = require("chai");
-var sinon = require("sinon");
-var sinonChai = require("sinon-chai");
+"use strict";
 
-chai.should();
+const chai = require("chai");
+const chaiAsPromised = require("chai-as-promised");
+const sinon = require("sinon");
+const sinonChai = require("sinon-chai");
+const proxyquire = require("proxyquire");
+
+chai.use(chaiAsPromised);
 chai.use(sinonChai);
 
-var Assertion = chai.Assertion;
+global.should = chai.should();
+global.sinon = sinon;
+global.proxyquire = proxyquire.noCallThru();
 
+
+const Assertion = chai.Assertion;
 
 chai.use(function(_chai, utils) {
     // Add integer assertion
@@ -20,10 +28,7 @@ chai.use(function(_chai, utils) {
 
     // Add return alias of equal and also be a chain
     utils.addChainableMethod(Assertion.prototype, "return", function(str) {
-        var obj = utils.flag(this, "object");
+        let obj = utils.flag(this, "object");
         new Assertion(obj).to.be.equal(str);
     });
 });
-
-
-module.exports = {};

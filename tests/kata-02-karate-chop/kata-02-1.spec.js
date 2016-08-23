@@ -1,10 +1,11 @@
+"use strict";
+
 /* global global, describe, it, beforeEach, afterEach */
 /* eslint no-unused-expressions: 0, max-statements: 0 */
-/* jslint -W030, -W071 */
 
-import "../_helpers";
+require("../_helpers");
 
-import chop from "../../src/kata-02-karate-chop/kata-02-1.js";
+const chop = require("../../src/kata-02-karate-chop/kata-02-1.js");
 
 
 describe("chop", () => {
